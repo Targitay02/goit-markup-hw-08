@@ -1,0 +1,42 @@
+// Переменные
+@import './utils/variables';
+// Общие стили
+@import './base/common';
+// Hidden
+@import './utils/hidden';
+// Сброс стандартных стилей
+@import './base/reset';
+// Контейнер
+@import './components/container';
+@import './components/button';
+// index.html
+
+// Хэдер
+@import './layout/header';
+// Лого
+@import './components/logo';
+// Герой
+@import './layout/hero';
+// Модальное окно
+@import './layout/modal';
+// Форма
+@import './layout/modal-form';
+// Преимущества
+@import './layout/benefits';
+// Чем мы занимаемся
+@import './layout/doing';
+// Наша команда
+@import './layout/team';
+// Социальные сети
+@import './layout/social';
+// Постоянные клиенты
+@import './layout/customers';
+
+// portfolio.html
+
+// Кнопки фильтра
+@import './layout/filter';
+// Наши проекты
+@import './layout/projects';
+// Футер
+@import './layout/footer';
