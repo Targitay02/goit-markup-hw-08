@@ -1,25 +1,35 @@
 .benefits {
     padding-top: 60px;
-    // padding-top: 94px;
-    // display: flex;
+    @media (min-width: 1200px) {
+        padding-top: 94px;
+        display: flex;
+    }
 }
 
 .benefits-list {
-    // display: flex;
     margin-bottom: -30px;
-    // margin-right: -30px;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+    }
+
+    @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .benefits-list__item {
-    flex-basis: 100vw;
+    width: 100%;
     margin-bottom: 30px;
-    // flex-basis: calc(100% / 4 - 30px);
-    // margin-right: 30px;
+    @media (min-width: 768px) {
+        margin-right: 30px;
+        flex-basis: calc(100% / 2 - 30px);
+    }
 }
 
 .benefits-list__box {
     display: flex;
-    // width: 270px;
     height: 120px;
     background-color: var(--section-background-color);
     border-radius: 4px;
