@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
         <nav class="nav">
             <a href="./index.html" lang="en" class="logo link">Web<span class="header-logo link">Studio</span></a>
@@ -38,7 +38,7 @@
             </li>
         </ul>
     </div>
-    </header> -->
+    </header>
 
     <main>
         <!--Шапка-->
@@ -90,15 +90,21 @@
             <h2 class="doing__title">Чем мы занимаемся</h2>
             <ul class="doing-list list">
                 <li class="doing-list__item">
-                    <a href="" class="doing-list__link"><img  src="./images/box1.jpg" alt="Програмист пишет код" width="370" height="294"></a>
+                    <a href="" class="doing-list__link">
+                        <img src="./images/box1.jpg" alt="Програмист пишет код" width="370" height="294" srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x">
+                    </a>
                     <p class="doing-list__text">Десктопные приложения</p>
                 </li>
                 <li class="doing-list__item">
-                    <a href="" class="doing-list__link"><img  src="./images/box2.jpg" alt="Разработка мобильного приложения" width="370" height="294"></a>
+                    <a href="" class="doing-list__link">
+                        <img  src="./images/box2.jpg" alt="Разработка мобильного приложения" width="370" height="294" srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x">
+                    </a>
                     <p class="doing-list__text">Мобильные приложения</p>
                 </li>
                 <li class="doing-list__item">
-                    <a href="" class="doing-list__link"><img  src="./images/box3.jpg" alt="Веб-дизайн" width="370" height="294"></a>
+                    <a href="" class="doing-list__link">
+                        <img  src="./images/box3.jpg" alt="Веб-дизайн" width="370" height="294" srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x">
+                    </a>
                     <p class="doing-list__text">Дизайнерские решения</p>
                 </li>
             </ul>
@@ -110,7 +116,12 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__item">
-                    <img src="./images/demianenko.jpg" alt="Фото" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/demianenko.jpg 1x, ./images/demianenko-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/demianenko-tab-1x.jpg 1x, ./images/demianenko-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/demianenko-mob-1x.jpg 1x, ./images/demianenko-mob-2x.jpg 2x" media="(min-width: 480px)">
+                        <img src="./images/demianenko.jpg" alt="Фото" width="270" height="260">
+                    </picture>
                     <div class="team-list__card">
                     <h3 class="team-list__name">Игорь Демьяненко</h3>
                     <p class="team-list__work-position" lang="en">Product Designer</p>
@@ -139,7 +150,12 @@
                 </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/repina.jpg" alt="Фото" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/repina.jpg 1x, ./images/repina-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/repina-tab-1x.jpg 1x, ./images/repina-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/repina-mob-1x.jpg 1x, ./images/repina-mob-2x.jpg 2x" media="(min-width: 480px)">
+                        <img src="./images/repina.jpg" alt="Фото" width="270" height="260">
+                    </picture>
                     <div class="team-list__card">
                     <h3 class="team-list__name">Ольга Репина</h3>
                     <p class="team-list__work-position" lang="en">Frontend Developer</p>
@@ -168,7 +184,12 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/tarasov.jpg" alt="Фото" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/tarasov.jpg 1x, ./images/tarasov-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/tarasov-tab-1x.jpg 1x, ./images/tarasov-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/tarasov-mob-1x.jpg 1x, ./images/tarasov-mob-2x.jpg 2x" media="(min-width: 480px)">
+                        <img src="./images/tarasov.jpg" alt="Фото" width="270" height="260">
+                    </picture>
                     <div class="team-list__card">
                     <h3 class="team-list__name">Николай Тарасов</h3>
                     <p class="team-list__work-position" lang="en">Marketing</p>
@@ -197,7 +218,12 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/ermakov.jpg" alt="Фото" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/ermakov.jpg 1x, ./images/ermakov-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/ermakov-tab-1x.jpg 1x, ./images/ermakov-tab-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/ermakov-mob-1x.jpg 1x, ./images/ermakov-mob-2x.jpg 2x" media="(min-width: 480px)">
+                        <img src="./images/ermakov.jpg" alt="Фото" width="270" height="260">
+                    </picture>
                     <div class="team-list__card">
                     <h3 class="team-list__name">Михаил Ермаков</h3>
                     <p class="team-list__work-position" lang="en">UI Designer</p>
@@ -341,9 +367,8 @@
                 <svg class="modal__close-button-icon" width="11" height="11"><use href="./images/sprite.svg#icon-vector-button"></use></svg>
             </button>
 
-            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-
             <form class="modal-form">
+                <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
                 <div class="modal-form__field">
                     <label for="name" class="modal-form__label">Имя</label>
                     <input type="text" id="name" class="modal-form__input">
