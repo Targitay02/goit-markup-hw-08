@@ -59,7 +59,8 @@
     line-height: 1.55;
     color: var(--primary-title-color);
 
-    padding-right: 77px 24px;
+    padding: 77px 24px;
+    
     @media (min-width: 768px) {
         padding: 49px 24px;
     }
