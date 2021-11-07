@@ -143,11 +143,6 @@ img {
   align-items: center;
 }
 
-.nav-box {
-  display: flex;
-  align-items: center;
-}
-
 .nav-list {
   display: flex;
   margin-left: 88px;
@@ -210,6 +205,13 @@ img {
 @media (max-width: 767px) {
   .contacts-list {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contacts-list {
+    flex-direction: row;
+    align-items: center;
   }
 }
 

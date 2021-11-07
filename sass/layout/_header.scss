@@ -27,10 +27,6 @@
     align-items: center;
 }
 
-.nav-box {
-    display: flex;
-    align-items: center;
-}
 .nav-list {
     display: flex;
     margin-left: 88px;
@@ -90,6 +86,10 @@
     color: var(--primary-text-color);
     @media (max-width: 767px) {
         display: none;
+    }
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
     }
 }
 
