@@ -2,26 +2,43 @@
     background-color: var(--header-background-color); 
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
+
 }
 
 .header__container {
-display: flex;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    @media (min-width: 768px) {
+        height: 80px;
 }
 
+.header-logo-box {
+    display: flex;
+    align-items: center;
+}
 .header-logo {
     color: #000000;
     }
+}
 
-.nav {
+.nav-box {
     display: flex;
     align-items: center;
 }
 
+.nav-box {
+    display: flex;
+    align-items: center;
+}
 .nav-list {
     display: flex;
-    margin-left: 93px;
+    margin-left: 88px;
     @media (max-width: 767px) {
         display: none;
+    }
+    @media (min-width: 1200px) {
+        margin-left: 93px;
     }
 }
 
@@ -37,9 +54,9 @@ display: flex;
     font-size: 14px;
     line-height: 1.15;
     color: var(--secondary-title-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.current {
         color: var(--active-color);
@@ -67,7 +84,8 @@ display: flex;
 
 .contacts-list {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin-left: auto;
     color: var(--primary-text-color);
     @media (max-width: 767px) {
@@ -78,7 +96,13 @@ display: flex;
 .contacts-list__item {
     display: flex;
     &:not(:last-child) {
-        margin-right: 50px;
+            margin-bottom: 10px;
+        }
+    @media (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 50px;
+        }
     }
 }
 
@@ -88,8 +112,6 @@ display: flex;
     line-height: 1.5;
     color: var(--primary-text-color);
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover,
@@ -99,9 +121,13 @@ display: flex;
 }
 
 .contacts-list__icon {
-    margin-right: 10px;
+    margin-right: 8px;
     align-self: center;
     fill: currentColor;
+
+    @media (min-width: 1200px) {
+        margin-right: 10px;
+    }
 }
 
 // Кнопка открытия мобильного меню

@@ -12,17 +12,22 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+
+    <header class="header">
         <div class="container header__container">
-        <nav class="nav">
-            <a href="./index.html" lang="en" class="logo link">Web<span class="header-logo link">Studio</span></a>
-            <ul class="nav-list list">
-                <li class="nav-list__item"><a href="./index.html" class="nav-list__link link">Студия</a></li>
-                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link current">Портфолио</a></li>
-                <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="contacts-list list">
+            <div class="header-logo-box">
+                <a href="./index.html" lang="en" class="logo link">Web<span class="header-logo link">Studio</span></a>
+            </div>
+            <div class="nav-box">
+            <nav class="nav">
+                <ul class="nav-list list">
+                    <li class="nav-list__item"><a href="./index.html" class="nav-list__link link current">Студия</a></li>
+                    <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
+                    <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+            <ul class="contacts-list list">
             <li class="contacts-list__item">
                 <a href="mailto:info@devstudio.com" class="contacts-list__link link">
                     <svg class="contacts-list__icon" width="16" height="12"> <use href="./images/sprite.svg#icon-envelope"></use></svg>
@@ -35,9 +40,42 @@
                     +38 096 111 11 11
                 </a>
             </li>
-        </ul>
-    </div>
-    </header> -->
+            </ul>
+
+
+            <button type="button" class="open-menu-btn js-open-menu">
+                <svg class="open-menu-btn__icon" width="40" height="40"><use href="./images/sprite.svg#icon-menu"></use></svg>
+            </button>
+
+            <div class="mobile-menu js-menu-container">
+                <div class="mobile-menu__content">
+
+                    <button type="button" class="close-menu-btn js-close-menu">
+                        <svg class="close-menu-btn__icon" width="40" height="40"><use href="./images/sprite.svg#icon-cross"></use></svg>
+                    </button>
+
+                    <ul class="menu-list list">
+                        <li class="menu-list__item"><a href="./index.html" class="menu-list__link link">Студия</a></li>
+                        <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link current">Портфолио</a></li>
+                        <li class="menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
+                    </ul>
+                    <div class="menu-bottom-component">
+                        <ul class="menu-contacts-list list">
+                            <li class="menu-contacts-list__item"><a href="tel:+380961111111" class="menu-contacts-list__tel link"> +38 096 111 11 11</a></li>
+                            <li class="menu-contacts-list__item"><a href="mailto:info@devstudio.com" class="menu-contacts-list__mail link">info@devstudio.com</a></li>
+                        </ul>
+
+                        <ul class="menu-social-list list">
+                            <li class="menu-social-list__item"><a href="" class="menu-social-list__link link">Instagram</a></li>
+                            <li class="menu-social-list__item"><a href="" class="menu-social-list__link link">Twitter</a></li>
+                            <li class="menu-social-list__item"><a href="" class="menu-social-list__link link">Facebook</a></li>
+                            <li class="menu-social-list__item"><a href="" class="menu-social-list__link link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
         <!-- Кнопки-фильтры -->

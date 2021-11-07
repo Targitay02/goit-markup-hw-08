@@ -119,25 +119,49 @@ img {
 
 .header__container {
   display: flex;
+  justify-content: center;
+  height: 60px;
 }
 
-.header-logo {
+@media (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
+}
+
+.header__container .header-logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.header__container .header-logo {
   color: #000000;
 }
 
-.nav {
+.nav-box {
+  display: flex;
+  align-items: center;
+}
+
+.nav-box {
   display: flex;
   align-items: center;
 }
 
 .nav-list {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
 }
 
 @media (max-width: 767px) {
   .nav-list {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-list {
+    margin-left: 93px;
   }
 }
 
@@ -151,9 +175,9 @@ img {
   font-size: 14px;
   line-height: 1.15;
   color: var(--secondary-title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list__link.current {
@@ -177,7 +201,8 @@ img {
 
 .contacts-list {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin-left: auto;
   color: var(--primary-text-color);
 }
@@ -193,7 +218,14 @@ img {
 }
 
 .contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .contacts-list__link {
@@ -202,8 +234,6 @@ img {
   line-height: 1.5;
   color: var(--primary-text-color);
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -212,9 +242,15 @@ img {
 }
 
 .contacts-list__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   align-self: center;
   fill: currentColor;
+}
+
+@media (min-width: 1200px) {
+  .contacts-list__icon {
+    margin-right: 10px;
+  }
 }
 
 .open-menu-btn {
@@ -237,6 +273,15 @@ img {
   .open-menu-btn {
     display: none;
   }
+}
+
+.open-menu-btn__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open-menu-btn:hover > .open-menu-btn__icon,
+.open-menu-btn:focus > .open-menu-btn__icon {
+  fill: var(--active-color);
 }
 
 .mobile-menu {
@@ -352,9 +397,16 @@ img {
 .logo {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   color: var(--active-color);
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .hero {
