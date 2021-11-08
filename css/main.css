@@ -456,6 +456,7 @@ img {
 .hero__title {
   font-size: 26px;
   line-height: 1.6;
+  font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
   text-align: center;
@@ -728,6 +729,12 @@ img {
   text-transform: uppercase;
   color: var(--secondary-title-color);
   margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .benefits-list__title {
+    text-align: center;
+  }
 }
 
 .benefits-list__text {

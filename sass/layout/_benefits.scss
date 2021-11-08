@@ -47,6 +47,9 @@
     text-transform: uppercase;
     color: var(--secondary-title-color);
     margin-bottom: 10px;
+    @media (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .benefits-list__text {
